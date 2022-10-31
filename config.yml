@@ -29,7 +29,7 @@ pipeline:
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
 #   - name: WhitespaceTokenizer
 #   - name: RegexFeaturizer
-#   - name: LexicalSyntacticFeaturizer
+#   - name: LexicalSyntacticFeaturizerS
 #   - name: CountVectorsFeaturizer
 #   - name: CountVectorsFeaturizer
 #     analyzer: char_wb

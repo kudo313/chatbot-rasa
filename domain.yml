@@ -15,6 +15,10 @@ intents:
   - ask_list_employ
   - ask_number_employ
   - ask_for_job
+  - ask_for_news
+  - ask_for_department
+  - ask_for_address
+  - ask_for_pr_company
 
 entities:
   - name_person
@@ -24,6 +28,7 @@ entities:
   - name_department
   - indi_ques
   - name_job
+  - pronouns
 
 responses:
   utter_greet:
@@ -39,14 +44,14 @@ responses:
   utter_noworries:
   - text: Em luôn sẵn lòng giúp đỡ anh(chị) bất cứ lúc nào ạ ^^
   utter_show_ability:
-  - text: Em có thể trò chuyện với anh(chị), thi thoảng có thể đề xuất anh(chị) nên
-      ăn gì trưa nay ạ
+  - text: Em có thể trò chuyện với anh(chị), có thể giúp anh chị tìm kiếm 1 số thông tin về công ty Rikai ạ
   utter_fallback:
   - text: Em xin lỗi, em chưa hiểu ý muốn của anh(chị) ạ. Anh chị có thể nói lại được
       không ạ
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 actions:
 - utter_greet
 - utter_happy
@@ -62,3 +67,7 @@ actions:
 - ans_list_employ
 - ans_number_employ
 - ans_for_job
+- ans_for_news
+- ans_for_department
+- ans_for_address
+- ans_for_pr_company
