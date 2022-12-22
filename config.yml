@@ -13,6 +13,13 @@ pipeline:
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
+  - name: ftfeat.FastTextFeaturizer
+    cache_dir: "/FastText/"
+    file: "cc.en.300.bin"
+  - name: printer.Printer
+    alias: after fasttext
+  - name: printer.Printer
+    alias: after outlier
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
     analyzer: "char_wb"

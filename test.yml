@@ -1,0 +1,1954 @@
+version: '3.1'
+nlu:
+- intent: greet
+  examples: '- chào em
+
+    - hello em
+
+    - hi em
+
+    - em ơi, cho anh hỏi
+
+    - bot ơi
+
+    - cho mình hỏi chút
+
+    - nè bot '
+- intent: goodbye
+  examples: '- good bye
+
+    - bye bye
+
+    - tạm biệt em
+
+    - tạm biệt bot nhá
+
+    '
+- intent: ask_ability
+  examples: '- em có thể làm những gì nhỉ
+
+    - em có chức năng gì?
+
+    - em giúp gì được anh không?
+
+    - em có thể giúp gì cho anh?
+
+    - em biết làm gì?
+
+    - em hỗ trợ anh như thế nào?
+
+    - cho anh xem các chức năng của em
+
+    '
+- intent: thankyou
+  examples: '- cảm ơn em nhá
+
+    - thanks em nha
+
+    - cảm ơn nha
+
+    - good job
+
+    - thank you
+
+    - cảm ơn bot nha
+
+    - thanks bot
+
+    - cảm ơn
+
+    - thank you so much
+
+    - great! Thanks
+
+    '
+- intent: praise
+  examples: '- bot giỏi quá
+
+    - great
+
+    - awsome
+
+    - bot làm tốt lắm
+
+    - ui giỏi thế
+
+    - bot thông minh
+
+    - đẹp trai đấy
+
+    - Ênm đệnp léăm
+
+    '
+- intent: decry
+  examples: '- quá tệ
+
+    - ngu ngốc
+
+    - chả biết gì cả
+
+    - ngu thật
+
+    - dở ghê
+
+    - có thế mà cũng không biết
+
+    - kém cói
+
+    '
+- intent: ask_for_lunch
+  examples: '- trưa nay anh nên ăn gì nhỉ
+
+    - trưa nay ăn gì bây giờ nhỉ
+
+    - chọn giúp t bữa trưa phát
+
+    - ăn trưa nào
+
+    - tiểu nhị, chọn món
+
+    - bữa trưa
+
+    - ăn gì bây giờ
+
+    - chọn giúp anh một quán ăn
+
+    '
+- intent: provide_name
+  examples: '- anh tên là  [Thảo]{"entity":"name_person"}
+
+    - anh tên là  [Linh]{"entity":"name_person"}
+
+    - anh tên là  [Sử]{"entity":"name_person"}
+
+    - anh tên là  [Cường]{"entity":"name_person"}
+
+    - anh tên là  [Yến]{"entity":"name_person"}
+
+    - anh tên là  [Hùng]{"entity":"name_person"}
+
+    - anh tên là  [Giáng]{"entity":"name_person"}
+
+    - anh tên là  [Danh]{"entity":"name_person"}
+
+    - anh tên là  [Cường]{"entity":"name_person"}
+
+    - anh tên là  [Phương]{"entity":"name_person"}
+
+    - anh tên là  [Nam]{"entity":"name_person"}
+
+    - anh tên là  [Trang]{"entity":"name_person"}
+
+    - anh tên là  [Hoàng]{"entity":"name_person"}
+
+    - anh tên là  [Huân]{"entity":"name_person"}
+
+    - anh tên là  [Hoàng]{"entity":"name_person"}
+
+    - anh tên là  [Anh]{"entity":"name_person"}
+
+    - anh tên là  [Quỳnh]{"entity":"name_person"}
+
+    - anh tên là  [Quân]{"entity":"name_person"}
+
+    - anh tên là  [Hiền]{"entity":"name_person"}
+
+    - anh tên là  [Anh]{"entity":"name_person"}
+
+    - anh tên là  [Phượng]{"entity":"name_person"}
+
+    - anh tên là  [Huy]{"entity":"name_person"}
+
+    - anh tên là  [Đạt]{"entity":"name_person"}
+
+    - anh tên là  [Sơn]{"entity":"name_person"}
+
+    - anh tên là  [Anh]{"entity":"name_person"}
+
+    - anh tên là  [Khải]{"entity":"name_person"}
+
+    - anh tên là  [Tiến]{"entity":"name_person"}
+
+    - anh tên là  [Hương]{"entity":"name_person"}
+
+    - anh tên là  [Huỳnh]{"entity":"name_person"}
+
+    - anh tên là  [Ngoan]{"entity":"name_person"}
+
+    - anh tên là  [Toàn]{"entity":"name_person"}
+
+    - anh tên là  [Trang]{"entity":"name_person"}
+
+    - anh tên là  [Hùng]{"entity":"name_person"}
+
+    - anh tên là  [Xuân]{"entity":"name_person"}
+
+    - anh tên là  [Hằng]{"entity":"name_person"}
+
+    - anh tên là  [Nghĩa]{"entity":"name_person"}
+
+    - anh tên là  [Dung]{"entity":"name_person"}
+
+    - anh tên là  [Tùng]{"entity":"name_person"}
+
+    - anh tên là  [Minh]{"entity":"name_person"}
+
+    - anh tên là  [Vũ]{"entity":"name_person"}
+
+    - anh tên là  [Lý]{"entity":"name_person"}
+
+    - anh tên là  [Dũng]{"entity":"name_person"}
+
+    - anh tên là  [Linh]{"entity":"name_person"}
+
+    - chị tên [Thảo]{"entity":"name_person"}
+
+    - chị tên [Linh]{"entity":"name_person"}
+
+    - chị tên [Sử]{"entity":"name_person"}
+
+    - chị tên [Cường]{"entity":"name_person"}
+
+    - chị tên [Yến]{"entity":"name_person"}
+
+    - chị tên [Hùng]{"entity":"name_person"}
+
+    - chị tên [Giáng]{"entity":"name_person"}
+
+    - chị tên [Danh]{"entity":"name_person"}
+
+    - chị tên [Cường]{"entity":"name_person"}
+
+    - chị tên [Phương]{"entity":"name_person"}
+
+    - chị tên [Nam]{"entity":"name_person"}
+
+    - chị tên [Trang]{"entity":"name_person"}
+
+    - chị tên [Hoàng]{"entity":"name_person"}
+
+    - chị tên [Huân]{"entity":"name_person"}
+
+    - chị tên [Hoàng]{"entity":"name_person"}
+
+    - chị tên [Anh]{"entity":"name_person"}
+
+    - chị tên [Quỳnh]{"entity":"name_person"}
+
+    - chị tên [Quân]{"entity":"name_person"}
+
+    - chị tên [Hiền]{"entity":"name_person"}
+
+    - chị tên [Anh]{"entity":"name_person"}
+
+    - chị tên [Phượng]{"entity":"name_person"}
+
+    - chị tên [Huy]{"entity":"name_person"}
+
+    - chị tên [Đạt]{"entity":"name_person"}
+
+    - chị tên [Sơn]{"entity":"name_person"}
+
+    - chị tên [Anh]{"entity":"name_person"}
+
+    - chị tên [Khải]{"entity":"name_person"}
+
+    - chị tên [Tiến]{"entity":"name_person"}
+
+    - chị tên [Hương]{"entity":"name_person"}
+
+    - chị tên [Huỳnh]{"entity":"name_person"}
+
+    - chị tên [Ngoan]{"entity":"name_person"}
+
+    - chị tên [Toàn]{"entity":"name_person"}
+
+    - chị tên [Trang]{"entity":"name_person"}
+
+    - chị tên [Hùng]{"entity":"name_person"}
+
+    - chị tên [Xuân]{"entity":"name_person"}
+
+    - chị tên [Hằng]{"entity":"name_person"}
+
+    - chị tên [Nghĩa]{"entity":"name_person"}
+
+    - chị tên [Dung]{"entity":"name_person"}
+
+    - chị tên [Tùng]{"entity":"name_person"}
+
+    - chị tên [Minh]{"entity":"name_person"}
+
+    - chị tên [Vũ]{"entity":"name_person"}
+
+    - chị tên [Lý]{"entity":"name_person"}
+
+    - chị tên [Dũng]{"entity":"name_person"}
+
+    - chị tên [Linh]{"entity":"name_person"}
+
+    - tôi tên [Thảo]{"entity":"name_person"}
+
+    - tôi tên [Linh]{"entity":"name_person"}
+
+    - tôi tên [Sử]{"entity":"name_person"}
+
+    - tôi tên [Cường]{"entity":"name_person"}
+
+    - tôi tên [Yến]{"entity":"name_person"}
+
+    - tôi tên [Hùng]{"entity":"name_person"}
+
+    - tôi tên [Giáng]{"entity":"name_person"}
+
+    - tôi tên [Danh]{"entity":"name_person"}
+
+    - tôi tên [Cường]{"entity":"name_person"}
+
+    - tôi tên [Phương]{"entity":"name_person"}
+
+    - tôi tên [Nam]{"entity":"name_person"}
+
+    - tôi tên [Trang]{"entity":"name_person"}
+
+    - tôi tên [Hoàng]{"entity":"name_person"}
+
+    - tôi tên [Huân]{"entity":"name_person"}
+
+    - tôi tên [Hoàng]{"entity":"name_person"}
+
+    - tôi tên [Anh]{"entity":"name_person"}
+
+    - tôi tên [Quỳnh]{"entity":"name_person"}
+
+    - tôi tên [Quân]{"entity":"name_person"}
+
+    - tôi tên [Hiền]{"entity":"name_person"}
+
+    - tôi tên [Anh]{"entity":"name_person"}
+
+    - tôi tên [Phượng]{"entity":"name_person"}
+
+    - tôi tên [Huy]{"entity":"name_person"}
+
+    - tôi tên [Đạt]{"entity":"name_person"}
+
+    - tôi tên [Sơn]{"entity":"name_person"}
+
+    - tôi tên [Anh]{"entity":"name_person"}
+
+    - tôi tên [Khải]{"entity":"name_person"}
+
+    - tôi tên [Tiến]{"entity":"name_person"}
+
+    - tôi tên [Hương]{"entity":"name_person"}
+
+    - tôi tên [Huỳnh]{"entity":"name_person"}
+
+    - tôi tên [Ngoan]{"entity":"name_person"}
+
+    - tôi tên [Toàn]{"entity":"name_person"}
+
+    - tôi tên [Trang]{"entity":"name_person"}
+
+    - tôi tên [Hùng]{"entity":"name_person"}
+
+    - tôi tên [Xuân]{"entity":"name_person"}
+
+    - tôi tên [Hằng]{"entity":"name_person"}
+
+    - tôi tên [Nghĩa]{"entity":"name_person"}
+
+    - tôi tên [Dung]{"entity":"name_person"}
+
+    - tôi tên [Tùng]{"entity":"name_person"}
+
+    - tôi tên [Minh]{"entity":"name_person"}
+
+    - tôi tên [Vũ]{"entity":"name_person"}
+
+    - tôi tên [Lý]{"entity":"name_person"}
+
+    - tôi tên [Dũng]{"entity":"name_person"}
+
+    - tôi tên [Linh]{"entity":"name_person"}
+
+    - mình tên [Thảo]{"entity":"name_person"}
+
+    - mình tên [Linh]{"entity":"name_person"}
+
+    - mình tên [Sử]{"entity":"name_person"}
+
+    - mình tên [Cường]{"entity":"name_person"}
+
+    - mình tên [Yến]{"entity":"name_person"}
+
+    - mình tên [Hùng]{"entity":"name_person"}
+
+    - mình tên [Giáng]{"entity":"name_person"}
+
+    - mình tên [Danh]{"entity":"name_person"}
+
+    - mình tên [Cường]{"entity":"name_person"}
+
+    - mình tên [Phương]{"entity":"name_person"}
+
+    - mình tên [Nam]{"entity":"name_person"}
+
+    - mình tên [Trang]{"entity":"name_person"}
+
+    - mình tên [Hoàng]{"entity":"name_person"}
+
+    - mình tên [Huân]{"entity":"name_person"}
+
+    - mình tên [Hoàng]{"entity":"name_person"}
+
+    - mình tên [Anh]{"entity":"name_person"}
+
+    - mình tên [Quỳnh]{"entity":"name_person"}
+
+    - mình tên [Quân]{"entity":"name_person"}
+
+    - mình tên [Hiền]{"entity":"name_person"}
+
+    - mình tên [Anh]{"entity":"name_person"}
+
+    - mình tên [Phượng]{"entity":"name_person"}
+
+    - mình tên [Huy]{"entity":"name_person"}
+
+    - mình tên [Đạt]{"entity":"name_person"}
+
+    - mình tên [Sơn]{"entity":"name_person"}
+
+    - mình tên [Anh]{"entity":"name_person"}
+
+    - mình tên [Khải]{"entity":"name_person"}
+
+    - mình tên [Tiến]{"entity":"name_person"}
+
+    - mình tên [Hương]{"entity":"name_person"}
+
+    - mình tên [Huỳnh]{"entity":"name_person"}
+
+    - mình tên [Ngoan]{"entity":"name_person"}
+
+    - mình tên [Toàn]{"entity":"name_person"}
+
+    - mình tên [Trang]{"entity":"name_person"}
+
+    - mình tên [Hùng]{"entity":"name_person"}
+
+    - mình tên [Xuân]{"entity":"name_person"}
+
+    - mình tên [Hằng]{"entity":"name_person"}
+
+    - mình tên [Nghĩa]{"entity":"name_person"}
+
+    - mình tên [Dung]{"entity":"name_person"}
+
+    - mình tên [Tùng]{"entity":"name_person"}
+
+    - mình tên [Minh]{"entity":"name_person"}
+
+    - mình tên [Vũ]{"entity":"name_person"}
+
+    - mình tên [Lý]{"entity":"name_person"}
+
+    - mình tên [Dũng]{"entity":"name_person"}
+
+    - mình tên [Linh]{"entity":"name_person"}
+
+    - [Thảo]{"entity":"name_person"}
+
+    - [Linh]{"entity":"name_person"}
+
+    - [Sử]{"entity":"name_person"}
+
+    - [Cường]{"entity":"name_person"}
+
+    - [Yến]{"entity":"name_person"}
+
+    - [Hùng]{"entity":"name_person"}
+
+    - [Giáng]{"entity":"name_person"}
+
+    - [Danh]{"entity":"name_person"}
+
+    - [Cường]{"entity":"name_person"}
+
+    - [Phương]{"entity":"name_person"}
+
+    - [Nam]{"entity":"name_person"}
+
+    - [Trang]{"entity":"name_person"}
+
+    - [Hoàng]{"entity":"name_person"}
+
+    - [Huân]{"entity":"name_person"}
+
+    - [Hoàng]{"entity":"name_person"}
+
+    - [Anh]{"entity":"name_person"}
+
+    - [Quỳnh]{"entity":"name_person"}
+
+    - [Quân]{"entity":"name_person"}
+
+    - [Hiền]{"entity":"name_person"}
+
+    - [Anh]{"entity":"name_person"}
+
+    - [Phượng]{"entity":"name_person"}
+
+    - [Huy]{"entity":"name_person"}
+
+    - [Đạt]{"entity":"name_person"}
+
+    - [Sơn]{"entity":"name_person"}
+
+    - [Anh]{"entity":"name_person"}
+
+    - [Khải]{"entity":"name_person"}
+
+    - [Tiến]{"entity":"name_person"}
+
+    - [Hương]{"entity":"name_person"}
+
+    - [Huỳnh]{"entity":"name_person"}
+
+    - [Ngoan]{"entity":"name_person"}
+
+    - [Toàn]{"entity":"name_person"}
+
+    - [Trang]{"entity":"name_person"}
+
+    - [Hùng]{"entity":"name_person"}
+
+    - [Xuân]{"entity":"name_person"}
+
+    - [Hằng]{"entity":"name_person"}
+
+    - [Nghĩa]{"entity":"name_person"}
+
+    - [Dung]{"entity":"name_person"}
+
+    - [Tùng]{"entity":"name_person"}
+
+    - [Minh]{"entity":"name_person"}
+
+    - [Vũ]{"entity":"name_person"}
+
+    - [Lý]{"entity":"name_person"}
+
+    - [Dũng]{"entity":"name_person"}
+
+    - [Linh]{"entity":"name_person"}
+
+    - họ và tên mình là [Phan Đức Thảo]{"entity":"name_person"}
+
+    - họ và tên mình là [Vũ Viết Linh]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Đức Sử]{"entity":"name_person"}
+
+    - họ và tên mình là [Trịnh Ngọc Cường]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Thị Yến]{"entity":"name_person"}
+
+    - họ và tên mình là [Vương Việt Hùng]{"entity":"name_person"}
+
+    - họ và tên mình là [Trần Thu Giáng]{"entity":"name_person"}
+
+    - họ và tên mình là [Phan Đức Danh]{"entity":"name_person"}
+
+    - họ và tên mình là [Lê Phú Cường]{"entity":"name_person"}
+
+    - họ và tên mình là [Đỗ Minh Phương]{"entity":"name_person"}
+
+    - họ và tên mình là [Đặng Thanh Nam]{"entity":"name_person"}
+
+    - họ và tên mình là [Võ Thị Thùy Trang]{"entity":"name_person"}
+
+    - họ và tên mình là [Đỗ Thái Hoàng]{"entity":"name_person"}
+
+    - họ và tên mình là [Trần Đình Huân]{"entity":"name_person"}
+
+    - họ và tên mình là [Đinh Ngọc Hoàng]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Quang Anh]{"entity":"name_person"}
+
+    - họ và tên mình là [Lê Kim Quỳnh]{"entity":"name_person"}
+
+    - họ và tên mình là [Lê Hồng Quân]{"entity":"name_person"}
+
+    - họ và tên mình là [Hoàng Thị Thu Hiền]{"entity":"name_person"}
+
+    - họ và tên mình là [Phạm Thị Lan Anh]{"entity":"name_person"}
+
+    - họ và tên mình là [Hà Thị Phượng]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Văn Huy]{"entity":"name_person"}
+
+    - họ và tên mình là [Vũ Thành Đạt]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Minh Sơn]{"entity":"name_person"}
+
+    - họ và tên mình là [Lê Vũ Hoàng Anh]{"entity":"name_person"}
+
+    - họ và tên mình là [Phạm Văn Khải]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Quyết Tiến]{"entity":"name_person"}
+
+    - họ và tên mình là [Hà Thị Hương]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Huỳnh]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Thị Ngoan]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Tuấn Toàn]{"entity":"name_person"}
+
+    - họ và tên mình là [Hoàng Hà Trang]{"entity":"name_person"}
+
+    - họ và tên mình là [Vương Phi Hùng]{"entity":"name_person"}
+
+    - họ và tên mình là [Lê Hà Xuân]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Thị Diễm Hằng]{"entity":"name_person"}
+
+    - họ và tên mình là [Hoàng Công Nghĩa]{"entity":"name_person"}
+
+    - họ và tên mình là [Trần Thị Dung]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Phúc Sơn Tùng]{"entity":"name_person"}
+
+    - họ và tên mình là [Trần Văn Minh]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Văn Vũ]{"entity":"name_person"}
+
+    - họ và tên mình là [Hoàng Thị Lý]{"entity":"name_person"}
+
+    - họ và tên mình là [Bùi Lê Dũng]{"entity":"name_person"}
+
+    - họ và tên mình là [Nguyễn Hữu Quang Linh]{"entity":"name_person"}
+
+    '
+- intent: ask_for_infor
+  examples: "- tôi làm ở [vị trí]{\"entity\": \"position\"} nào\n- [vị trí]{\"entity\"\
+    : \"position\"} của tôi ở công ty làm gì \n- tôi đang làm ở [bộ phận]{\"entity\"\
+    : \"department\"} nào\n- [bộ phận]{\"entity\": \"department\"} cuả tôi là gì\n\
+    - [chức danh]{\"entity\": \"position\"} trong công ty là gì\n- [vị trí]{\"entity\"\
+    : \"position\"} trong công ty là gì\n- tôi làm ở [mảng]{\"entity\": \"department\"\
+    } nào trong công ty\n- công ty thuê tôi về [làm gì]{\"entity\": \"position\"}\n\
+    - [chức vụ]{\"entity\": \"position\"} của tôi trong công ty\n"
+- intent: ask_for_indiviual_infor
+  examples: '- cho mình xin [thông tin]{"entity": "indi_ques"} [Phan Đức Thảo]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Vũ Viết Linh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Đức Sử]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Trịnh Ngọc Cường]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Thị Yến]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Vương Việt Hùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Trần Thu Giáng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Phan Đức Danh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Lê Phú Cường]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Đỗ Minh Phương]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Đặng Thanh Nam]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Võ Thị Thùy Trang]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Đỗ Thái Hoàng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Trần Đình Huân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Đinh Ngọc Hoàng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Quang Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Lê Kim Quỳnh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Lê Hồng Quân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hoàng Thị Thu Hiền]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Phạm Thị Lan Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hà Thị Phượng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Văn Huy]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Vũ Thành Đạt]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Minh Sơn]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Lê Vũ Hoàng Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Phạm Văn Khải]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Quyết Tiến]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hà Thị Hương]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Huỳnh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Thị Ngoan]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Tuấn Toàn]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hoàng Hà Trang]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Vương Phi Hùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Lê Hà Xuân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Thị Diễm Hằng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hoàng Công Nghĩa]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Trần Thị Dung]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Phúc Sơn Tùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Trần Văn Minh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Văn Vũ]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Hoàng Thị Lý]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Bùi Lê Dũng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [Nguyễn Hữu Quang Linh]{"entity":"name_person"}
+
+    - [anh]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Sử]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Yến]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Danh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Phương]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Nam]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Quân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huy]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Khải]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hương]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Dung]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Minh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Lý]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [bạn]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Linh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Sử]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Cường]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Yến]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Danh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Cường]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Phương]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Nam]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Trang]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Huân]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Anh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Quân]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Anh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Huy]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Anh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Khải]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hương]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Trang]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Dung]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Minh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Lý]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [bạn]{"entity": "pronouns"} [Linh]{"entity":"name_person"} có [chức danh]{"entity":
+    "indi_ques"} gì thế
+
+    - [anh]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Sử]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Yến]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Danh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Phương]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Nam]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Huân]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Quân]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Huy]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Khải]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hương]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Dung]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Minh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Lý]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [trung tâm]{"entity":
+    "indi_ques"} nào
+
+    - [chị]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Sử]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Yến]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Danh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Phương]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Nam]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Quân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huy]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Khải]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hương]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Dung]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Minh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Lý]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [vị trí]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Sử]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Yến]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Danh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Phương]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Nam]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Quân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huy]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Khải]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hương]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Dung]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Minh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Lý]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Thảo]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Sử]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Yến]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Giáng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Danh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Phương]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Nam]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Quân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hiền]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Phượng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huy]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Đạt]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Sơn]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Khải]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Tiến]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hương]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Toàn]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Xuân]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Hằng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Dung]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Tùng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Minh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Vũ]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Lý]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Dũng]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"} làm ở [bộ phận]{"entity":
+    "indi_ques"} nào thế
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Thảo]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Linh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Sử]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Cường]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Yến]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Giáng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Danh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Cường]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Phương]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Nam]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Trang]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hoàng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Huân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hoàng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Quỳnh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Quân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hiền]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Phượng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Huy]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Đạt]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Sơn]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Anh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Khải]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Tiến]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hương]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Huỳnh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Ngoan]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Toàn]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Trang]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Xuân]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Hằng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Nghĩa]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Dung]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Tùng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Minh]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Vũ]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Lý]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Dũng]{"entity":"name_person"}
+
+    - cho mình xin [thông tin]{"entity": "indi_ques"} [anh]{"entity": "pronouns"}
+    [Linh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Thảo]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Sử]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Yến]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Giáng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Danh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Cường]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Phương]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Nam]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Huân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Quân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hiền]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Phượng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Huy]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Đạt]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Sơn]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Khải]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Tiến]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hương]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Toàn]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Trang]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Xuân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Hằng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Dung]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Tùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Minh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Vũ]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Lý]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Dũng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [anh]{"entity": "pronouns"} [Linh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Thảo]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Sử]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Yến]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Giáng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Danh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Cường]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Phương]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Nam]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Huân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hoàng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Quỳnh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Quân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hiền]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Phượng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Huy]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Đạt]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Sơn]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Anh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Khải]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Tiến]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hương]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Huỳnh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Ngoan]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Toàn]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Trang]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Xuân]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Hằng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Nghĩa]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Dung]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Tùng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Minh]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Vũ]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Lý]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Dũng]{"entity":"name_person"}
+
+    - [chức vụ]{"entity": "indi_ques"} của [chị]{"entity": "pronouns"} [Linh]{"entity":"name_person"}
+
+    '
+- intent: ask_list_employ
+  examples: "- Ai là [giám đốc]{\"entity\": \"name_position\"} bên [Uranus]{\"entity\"\
+    : \"name_department\"}\n- Ai là [giám đốc]{\"entity\": \"name_position\"} bên\
+    \ [Venus]{\"entity\": \"name_department\"}\n- Ai là [sếp]{\"entity\": \"name_position\"\
+    } bên [Venus]{\"entity\": \"name_department\"}\n- Ai là [sếp]{\"entity\": \"name_position\"\
+    } bên [Uranus]{\"entity\": \"name_department\"}\n- [Venus]{\"entity\": \"name_department\"\
+    } có những [thành viên]{\"entity\": \"name_position\"} nào\n- Ai là [sếp]{\"entity\"\
+    : \"name_position\"} bên [Uranus]{\"entity\": \"name_department\"}\n- [Uranus]{\"\
+    entity\": \"name_department\"} có những [Team Leader]{\"entity\": \"name_position\"\
+    } nào\n- [Uranus]{\"entity\": \"name_department\"} có những [leader]{\"entity\"\
+    : \"name_position\"} nào\n- [Uranus]{\"entity\": \"name_department\"} có những\
+    \ [quản lý]{\"entity\": \"name_position\"} nào\n- [Venus]{\"entity\": \"name_department\"\
+    } có những [Team Leader]{\"entity\": \"name_position\"} nào\n- [Venus]{\"entity\"\
+    : \"name_department\"} có những [leader]{\"entity\": \"name_position\"} nào\n\
+    - [Venus]{\"entity\": \"name_department\"} có những [quản lý]{\"entity\": \"name_position\"\
+    } nào    \n- [Uranus]{\"entity\": \"name_department\"} có những [thành viên]{\"\
+    entity\": \"name_position\"} nào\n- [Venus]{\"entity\": \"name_department\"} có\
+    \ những [thành viên]{\"entity\": \"name_position\"} nào\n- [Uranus]{\"entity\"\
+    : \"name_department\"} có những [nhân viên]{\"entity\": \"name_position\"} nào\n\
+    - [Venus]{\"entity\": \"name_department\"} có những [nhân viên]{\"entity\": \"\
+    name_position\"} nào\n- [Uranus]{\"entity\": \"name_department\"} có những [member]{\"\
+    entity\": \"name_position\"} nào\n- [Venus]{\"entity\": \"name_department\"} có\
+    \ những [member]{\"entity\": \"name_position\"} nào\n- Có những ai là [thành viên]{\"\
+    entity\": \"name_position\"} bên [Venus]{\"entity\": \"name_department\"}\n- Có\
+    \ những ai là [thành viên]{\"entity\": \"name_position\"} bên [Uranus]{\"entity\"\
+    : \"name_department\"}\n- ai đang [thực tập]{\"entity\": \"name_position\"} bên\
+    \ [Venus]{\"entity\": \"name_department\"}\n- ai đang [thực tập]{\"entity\": \"\
+    name_position\"} bên [Uranus]{\"entity\": \"name_department\"}\n- Có những ai\
+    \ đang là [thực tập sinh]{\"entity\": \"name_position\"} bên [Venus]{\"entity\"\
+    : \"name_department\"}\n- Có những ai đang là [thực tập sinh]{\"entity\": \"name_position\"\
+    } bên [Uranus]{\"entity\": \"name_department\"}\n- Có những ai đang là [tts]{\"\
+    entity\": \"name_position\"} bên [Uranus]{\"entity\": \"name_department\"}\n-\
+    \ bên [Venus]{\"entity\": \"name_department\"} có những [intern]{\"entity\": \"\
+    name_position\"} nào\n- bên [Uranus]{\"entity\": \"name_department\"} có những\
+    \ [intern]{\"entity\": \"name_position\"} nào\n- bên [HR]{\"entity\": \"name_department\"\
+    } có những [intern]{\"entity\": \"name_position\"} nào\n- [HR]{\"entity\": \"\
+    name_department\"} có những [member]{\"entity\": \"name_position\"} nào\n- Ai\
+    \ là [sếp]{\"entity\": \"name_position\"} bên [HR]{\"entity\": \"name_department\"\
+    }\n"
+- intent: ask_number_employ
+  examples: "- trung tâm [Uranus]{\"entity\": \"name_department\"} có bao nhiêu [thành\
+    \ viên]{\"entity\": \"name_position\"}\n- trung tâm [Uranus]{\"entity\": \"name_department\"\
+    } có bao nhiêu [Intern]{\"entity\": \"name_position\"} \n- số [thành viên]{\"\
+    entity\": \"name_position\"} bên [Uranus]{\"entity\": \"name_department\"}\n-\
+    \ tổng số [nhân viên]{\"entity\": \"name_position\"} bên [Uranus] là bao nhiêu\n\
+    - bên [Uranus] có bao nhiêu [người]{\"entity\": \"name_position\"} thế\n- số lượng\
+    \ [team leader]{\"entity\": \"name_position\"} bên [Uranus]\n- có bao nhiêu người\
+    \ đang [thực tập]{\"entity\": \"name_position\"} bên [Uranus]\n- có bao nhiêu\
+    \ [thực tập sinh]{\"entity\": \"name_position\"} ở [Uranus]{\"entity\": \"name_department\"\
+    }\n- có bao nhiêu [thực tập sinh] {\"entity\": \"name_position\"} ở [Venus]{\"\
+    entity\": \"name_department\"}\n- có bao nhiêu [thực tập sinh] {\"entity\": \"\
+    name_position\"} ở [HR]{\"entity\": \"name_department\"}\n- trung tâm [Uranus]{\"\
+    entity\": \"name_department\"} có mấy [người]{\"entity\": \"name_position\"}\n\
+    - bên [Venus]{\"entity\": \"name_department\"} có mấy [team lead]{\"entity\":\
+    \ \"name_position\"}\n"
+- intent: ask_for_job
+  examples: "- công ty mình hiện có tuyển nhân viên không ạ\n- công ty đang tuyển\
+    \ dụng vị trí nào \n- bên mình hiện còn tuyển nhân viên không\n- anh muốn ứng\
+    \ tuyển vị trí [thực tập sinh]{\"entity\": \"name_poisition\"}\n- cho mình hỏi\
+    \ vị trí [Backend]{\"entity\": \"name_job\"} còn tuyển không\n- cho xin thông\
+    \ tin tuyển dụng vị trí [backend]{\"entity\": \"name_job\"}\n- cho mình hỏi vị\
+    \ trí [Nodejs]{\"entity\": \"name_job\"} còn tuyển không\n- cho xin thông tin\
+    \ tuyển dụng vị trí [ruby]{\"entity\": \"name_job\"}\n- em muốn xin việc [Backend\
+    \ Java]{\"entity\": \"name_job\"}\n- cho xin JD công việc [React Native]{\"entity\"\
+    : \"name_job\"}\n- công việc [Frontend ReactJS]{\"entity\": \"name_job\"} còn\
+    \ tuyển nữa không\n- cho xin thông tin tuyển dụng vị trí [sales]{\"entity\": \"\
+    name_job\"}\n- cho mình hỏi vị trí [team leader]{\"entity\": \"name_job\"} còn\
+    \ tuyển không\n- cho xin thông tin tuyển dụng vị trí [Pytorch]{\"entity\": \"\
+    name_job\"}\n- em muốn xin việc [Flutter]{\"entity\": \"name_job\"}\n- cho xin\
+    \ JD công việc [Android]{\"entity\": \"name_job\"}\n- công việc [AI Engineer]{\"\
+    entity\": \"name_job\"} còn tuyển nữa không\n- cho xin thông tin tuyển dụng vị\
+    \ trí [IT Comtor]{\"entity\": \"name_job\"}\n- cho mình hỏi vị trí [PM]{\"entity\"\
+    : \"name_job\"} còn tuyển không\n- cho xin thông tin tuyển dụng vị trí [Golang]{\"\
+    entity\": \"name_job\"}\n- em muốn xin việc [Data Engineer]{\"entity\": \"name_job\"\
+    }\n- cho xin JD công việc [BA]{\"entity\": \"name_job\"}\n- công việc [HR]{\"\
+    entity\": \"name_job\"} còn tuyển nữa không\n- cho xin thông tin tuyển dụng vị\
+    \ trí [Talent Account]{\"entity\": \"name_job\"}\n- cho mình hỏi vị trí [R]{\"\
+    entity\": \"name_job\"} còn tuyển không\n- cho xin thông tin tuyển dụng vị trí\
+    \ [C++]{\"entity\": \"name_job\"}\n- em muốn xin việc [Game Developer]{\"entity\"\
+    : \"name_job\"}\n- cho xin JD công việc [Backend Python]{\"entity\": \"name_job\"\
+    }\n- công việc [Angular]{\"entity\": \"name_job\"} còn tuyển nữa không\n"
+- intent: ask_for_news
+  examples: "- cho 1 số tin tức về công ty\n- công ty dạo này có tin gì mới không\
+    \ \n- cập nhật tin tức của công ty\n- tin tức mới nhất ngày hôm nay\n- có tin\
+    \ gì mới trong tuần trước không\n- cập nhật tình hình ngày hôm qua\n- công ty\
+    \ tuần trước có tin gì không\n- hôm nay có tin gì mới không\n- hôm qua có xảy\
+    \ ra chuyện gì không thế\n"
+- intent: ask_for_project
+  examples: '- [công ty] đang có những [dự án] nào
+
+    - bên [team AI] đang làm [dự án] nào
+
+    - cho xin thông tin [case study] bên [AI]
+
+    '
+- synonym: Delivery Director
+  examples: '- sếp
+
+    - giám đốc
+
+    '
+- synonym: vị trí
+  examples: '- vị trí
+
+    - chức danh
+
+    - chức vụ
+
+    '
+- synonym: trung tâm
+  examples: '- trung tâm
+
+    - bộ phận
+
+    '
+- synonym: Delivery Director
+  examples: '- giám đốc
+
+    - sếp
+
+    '
+- synonym: Intern Engineer
+  examples: "- thực tập\n- thực tập sinh\n- Intern\n- intern \n- tts\n"
+- synonym: Lead Engineer
+  examples: '- team lead
+
+    - leader
+
+    - quản lý
+
+    - Team Leader
+
+    '
+- synonym: thành viên
+  examples: '- nhân viên
+
+    - member
+
+    - nguời
+
+    '
+- synonym: thông tin
+  examples: '- in4
+
+    - infor
+
+    - info
+
+    '
