@@ -1,0 +1,86 @@
+version: "3.1"
+
+stories:
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_noworries
+
+- story: ask_ability
+  steps:
+  - intent: ask_ability
+  - action: utter_show_ability
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: praise
+  steps:
+  - intent: praise 
+  - action: utter_happy
+
+- story: decry
+  steps:
+  - intent: decry
+  - action: utter_sorry
+
+- story: ask_for_lunch
+  steps:
+  - intent: ask_for_lunch
+  - action: action_recommend
+
+# - story: ask_infor
+#   steps:
+#   - intent: ask_for_infor
+#   - action: get_name
+#   - intent: provide_name
+#   - action: get_infor
+
+- story: ask_indi_infor
+  steps:
+  - intent: ask_for_indiviual_infor
+  - action: ans_indi_infor
+
+- story: ask_list_employ
+  steps:
+  - intent: ask_list_employ
+  - action: ans_list_employ
+
+- story: ask_number_employ
+  steps:
+  - intent: ask_number_employ
+  - action: ans_number_employ
+
+- story: ask_for_job
+  steps:
+  - intent: ask_for_job
+  - action: ans_for_job
+
+- story: ask_for_news
+  steps:
+  - intent: ask_for_news
+  - action: ans_for_news
+
+- story: ask_for_department
+  steps:
+  - intent: ask_for_department
+  - action: ans_for_department
+
+- story: ask_for_address
+  steps:
+  - intent: ask_for_address
+  - action: ans_for_address
+
+- story: ask_for_pr_company
+  steps:
+  - intent: ask_for_pr_company
+  - action: ans_for_pr_company
+  
